@@ -1,0 +1,107 @@
+.form {
+  width: 81%;
+
+  border-radius: 15px 15px 10px 10px;
+  background-color: var(--color-solitude);
+
+  @media (max-width: (60em - 0.06em)) {
+    width: 58%;
+  }
+
+  @media (max-width: (47.97em - 0.06em)) {
+    width: 100%;
+  }
+}
+
+.form__text {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: linear-gradient(180deg, #6A32B4 0%, #552693 100%);
+
+  @media (max-width: (47.97em - 0.06em)) {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+.form__form {
+  width: 100%;
+  padding: 36px 39px;
+
+  display: grid;
+  gap: 24px;
+
+  @media (max-width: (47.97em - 0.06em)) {
+    padding: 16px 20px;
+  }
+}
+
+.form__wrapper {
+  display: grid;
+  gap: 5px;
+
+  label {
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-bright-grey);
+
+    margin-left: 20px;
+  }
+
+  input {
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.1) inset;
+    background-color: #f5f3ff;
+
+    font-size: 20px;
+    line-height: 120%;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 120%;
+    }
+
+    @media (max-width: (47.97em - 0.06em)) {
+      font-size: 16px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.form__submit {
+  @include orangeButton;
+
+  width: 100%;
+}
+
+.form__guarantee {
+  font-size: 12px;
+  color: var(--color-silver);
+
+  padding-left: 28px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+    background: url("/lock.svg") no-repeat center;
+  }
+}

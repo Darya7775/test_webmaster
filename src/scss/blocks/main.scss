@@ -1,0 +1,136 @@
+.main {
+  width: 100%;
+  margin-top: 86px;
+  padding: 111px 0 135px;
+
+  @include background;
+
+  position: relative;
+
+  @include wave;
+
+  &::before {
+    background-color: var(--color-solitude);
+  }
+
+  &::after {
+    @include background;
+  }
+
+  @media (max-width: (100em - 0.06em)) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: (60em - 0.06em)) {
+    padding: 40px 0 94px;
+  }
+}
+
+.main__container {
+  display: flex;
+  gap: 40px;
+
+  h2 {
+    margin: 0;
+
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 87%;
+    text-transform: uppercase;
+
+    span {
+      display: inline-flex;
+      font-size: 43px;
+      line-height: 100%;
+      font-weight: 800;
+      color: var(--color-portage);
+
+      @media (max-width: (80em - 0.06em)) {
+        font-size: 25px;
+      }
+
+      @media (max-width: (47.97em - 0.06em)) {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: (80em - 0.06em)) {
+      font-size: 40px;
+    }
+
+    @media (max-width: (60em - 0.06em)) {
+      width: 80%;
+      font-size: 32px;
+    }
+
+    @media (max-width: (47.97em - 0.06em)) {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    font-size: 23px;
+    line-height: 120%;
+    color: var(--color-portage);
+
+    @media (max-width: (47.97em - 0.06em)) {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: (60em - 0.06em)) {
+    flex-direction: column;
+  }
+}
+
+.main__wrapper {
+  display: grid;
+  gap: 30px;
+
+  @media (max-width: (80em - 0.06em)) {
+    gap: 20px;
+  }
+}
+
+.main__list {
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+
+  align-self: start;
+
+  font-size: 22px;
+  line-height: 120%;
+
+  border-radius: 10px;
+  background: linear-gradient(90deg, #969AF7 -99.66%, rgba(150, 154, 247, 0) 64.66%);
+
+  @media (max-width: (47.97em - 0.06em)) {
+    font-size: 16px;
+  }
+}
+
+.main__item {
+  padding-left: 25px;
+  position: relative;
+
+  p {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7%;
+    left: 0;
+    transform: translateY(78%);
+
+    width: 14px;
+    height: 11px;
+
+    background: url("/check.svg") no-repeat center;
+  }
+}

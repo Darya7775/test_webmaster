@@ -1,0 +1,214 @@
+.header {
+  width: 100%;
+  padding: 57px 0 16px;
+
+  position: fixed;
+  z-index: 7;
+
+  @include background;
+
+  @media (max-width: (100em - 0.06em)) {
+    padding: 20px 0;
+  }
+
+  @media (max-width: (47.97em - 0.06em)) {
+    padding: 15px 0;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+
+  @media (max-width: (85.3em - 0.06em)) {
+    gap: 40px;
+  }
+
+  @media (max-width: (80em - 0.06em)) {
+    gap: 24px;
+  }
+
+  @media (max-width: (64em - 0.06em)) {
+    justify-content: space-around;
+  }
+}
+
+.header__logo {
+  width: 19%;
+
+  @media (max-width: (85.3em - 0.06em)) {
+    width: 115px;
+    height: auto;
+  }
+}
+
+.header__tel {
+  width: 26%;
+  display: flex;
+  gap: 5px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+
+  transition: color .3s ease;
+  padding-left: 40px;
+
+  position: relative;
+
+  &-one {
+    @media (max-width: (85.3em - 0.06em)) {
+      display: none;
+    }
+
+    @media (max-width: (64em - 0.06em)) {
+      display: inline-block;
+    }
+
+    @media (max-width: (33.7em - 0.06em)) {
+      display: none;
+    }
+  }
+
+  &-two {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+
+    @media (max-width: (85.3em - 0.06em)) {
+      display: none;
+    }
+
+    @media (max-width: (64em - 0.06em)) {
+      display: inline-block;
+    }
+
+    @media (max-width: (33.7em - 0.06em)) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+    background-color: var(--color-default-white);
+    background-image: url('/telephone.svg');
+    background-position: center;
+    background-size: 56%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    transition: background-color .3s ease;
+
+    @media (max-width: (85.3em - 0.06em)) {
+      top: -20px;
+    }
+
+    @media (max-width: (64em - 0.06em)) {
+      top: -8px;
+    }
+
+    @media (max-width: (33.7em - 0.06em)) {
+      top: -20px;
+    }
+  }
+
+  transition: color .3s ease;
+
+  @include hover {
+    color: var(--color-portage);
+    transition: color .3s ease;
+
+    &::after {
+      background-color: var(--color-portage);
+      transition: background-color .3s ease;
+    }
+  }
+
+  @media (max-width: (85.3em - 0.06em)) {
+    width: max-content;
+  }
+}
+
+.header__menu {
+  display: none;
+
+  @media (max-width: (64em - 0.06em)) {
+    display: block;
+  }
+
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    top: 12px;
+  }
+
+  span {
+    top: 20px;
+  }
+
+  &::after {
+    content: "";
+    top: 28px;
+  }
+
+  &::before,
+  span,
+  &::after {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: var(--color-default-white);
+    border-radius: 9px;
+    left: 0;
+    transform: rotate(0);
+    transition: all .3s ease;
+    }
+
+    @include hover {
+      opacity: 0.5;
+      transition: opacity .3s ease;
+    }
+
+  &[data-state="active"] {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 11;
+
+    span {
+      display: none;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      background: var(--color-default-white);
+      transition: transform .3s ease;
+    }
+
+    &::after {
+      top: 12px;
+      transform: rotate(-45deg);
+      transition: transform .3s ease;
+      background: var(--color-default-white);
+    }
+  }
+}

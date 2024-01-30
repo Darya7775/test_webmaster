@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <meta name="description" content="Author: D.I. Stolyarova">
+    <link rel="stylesheet" href="/src/styles.scss">
+    <title>test webmaster</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>сайт оптовых поставок электронных компонентов</h1>
+      <div class="overlay"></div>
+      <header class="header">
+        <div class="container header__container">
+          <a class="header__logo" href="/">
+            <img src="/logo.svg" alt="Логотип" width="155" height="28">
+          </a>
+          <nav class="nav" data-menu="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Производители</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Для  кого мы работаем</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Сертификаты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">FAQ</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__tel" href="tel:+78123135845">
+            <span class="header__tel-one">+7 (812)</span><span class="header__tel-two">313-58-45</span>
+          </a>
+          <button class="header__menu" type="button" data-state="" aria-label="открыть меню"><span></span></button>
+        </div>
+      </header>
+      <main>
+        <section class="main">
+          <div class="container main__container">
+            <div class="main__wrapper">
+              <h2>Оптовые поставки <span>электронных компонентов</span> из&nbsp;китая день в&nbsp;день</h2>
+              <p>Комплексные поставки электронных компонентов и&nbsp;оборудования. Подберем аналоги популярных брендов из&nbsp;Европы в&nbsp;условиях санкций.</p>
+              <ul class="main__list">
+                <li class="main__item">
+                  <p>Отсрочка платежей для постоянных клиентов</p>
+                </li>
+                <li class="main__item">
+                  <p>Бесплатная доставка по&nbsp;Москве и&nbsp;СПБ в&nbsp;течение 2х&nbsp;часов</p>
+                </li>
+                <li class="main__item">
+                  <p>Квалифицированный персональный менеджер</p>
+                </li>
+              </ul>
+            </div>
+            <div class="main__form form">
+              <div class="form__text">Закажите<br> обратный звонок</div>
+              <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="form__wrapper">
+                  <label for="name">Ваше имя*</label>
+                  <input type="text" id="name" name="name" placeholder="Петров Петр">
+                </div>
+                <div class="form__wrapper">
+                  <label for="tel">Ваш номер*</label>
+                  <input type="tel" id="tel" name="tel" placeholder="+7 (_ _ _) _ _ _-_ _-_ _">
+                </div>
+                <button class="form__submit" type="submit">Заказать звонок</button>
+                <div class="form__guarantee">Мы гарантируем конфиденциальность данных</div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="benefits">
+          <div class="container benefits__container">
+            <h2>Почему с&nbsp;нами выгодно</h2>
+            <p>С&nbsp;1996 года мы&nbsp;занимаемся оптовыми поставками электронных компонентов от&nbsp;ведущих производителей из&nbsp;Европы и&nbsp;Азии для Российских потребителей.</p>
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <picture>
+                  <source type="image/avif" srcset="/benefits/quality.avif 1x, /benefits/quality@2x.avif 2x">
+                  <source type="image/webp" srcset="/benefits/quality.webp 1x, /benefits/quality@2x.webp 2x">
+                  <img src="/benefits/quality.png" srcset="/benefits/quality@2x.png 2x" alt="картинка качество" width="157" height="163">
+                </picture>
+                <h3>Качественная продукция</h3>
+                <p>Все наши товары сертифицированы и&nbsp;имеют сопроводительную документацию.</p>
+              </li>
+              <li class="benefits__item">
+                <picture>
+                  <source type="image/avif" srcset="/benefits/way.avif 1x, /benefits/way@2x.avif 2x">
+                  <source type="image/webp" srcset="/benefits/way.webp 1x, /benefits/way@2x.webp 2x">
+                  <img src="/benefits/way.png" srcset="/benefits/way@2x.png 2x" alt="картинка индивидуальный подход" width="157" height="163">
+                </picture>
+                <h3>Индивидуальный подход</h3>
+                <p>Возможность изготовления компонентов специально для вас на&nbsp;заводах-изготовителя.</p>
+              </li>
+              <li class="benefits__item">
+                <picture>
+                  <source type="image/avif" srcset="/benefits/delivery.avif 1x, /benefits/delivery@2x.avif 2x">
+                  <source type="image/webp" srcset="/benefits/delivery.webp 1x, /benefits/delivery@2x.webp 2x">
+                  <img src="/benefits/delivery.png" srcset="/benefits/delivery@2x.png 2x" alt="картинка бесплатная доставка" width="157" height="163">
+                </picture>
+                <h3>Бесплатная доставка</h3>
+                <p>При наличии товара на&nbsp;складе и&nbsp;заказе от&nbsp;10&nbsp;000&nbsp;рублей, доставим бесплатно по&nbsp;Москве и&nbsp;СПБ в&nbsp;течение 2х&nbsp;часов.</p>
+              </li>
+              <li class="benefits__item">
+                <picture>
+                  <source type="image/avif" srcset="/benefits/analog.avif 1x, /benefits/analog@2x.avif 2x">
+                  <source type="image/webp" srcset="/benefits/analog.webp 1x, /benefits/analog@2x.webp 2x">
+                  <img src="/benefits/analog.png" srcset="/benefits/analog@2x.png 2x" alt="картинка аналоги" width="157" height="163">
+                </picture>
+                <h3>Подбираем аналоги</h3>
+                <p>Поможем подобрать аналоги популярных европейских брендов в&nbsp;условиях санкций.</p>
+              </li>
+              <li class="benefits__item">
+                <picture>
+                  <source type="image/avif" srcset="/benefits/reservation.avif 1x, /benefits/reservation@2x.avif 2x">
+                  <source type="image/webp" srcset="/benefits/reservation.webp 1x, /benefits/reservation@2x.webp 2x">
+                  <img src="/benefits/reservation.png" srcset="/benefits/reservation@2x.png 2x" alt="картинка резервный запас компонентов" width="157" height="163">
+                </picture>
+                <h3>Резервный запас компонентов</h3>
+                <p>Хранение товара на&nbsp;наших складах для постоянных клиентов.</p>
+              </li>
+              <li class="benefits__item">
+                <picture>
+                  <source type="image/avif" srcset="/benefits/payment.avif 1x, /benefits/payment@2x.avif 2x">
+                  <source type="image/webp" srcset="/benefits/payment.webp 1x, /benefits/payment@2x.webp 2x">
+                  <img src="/benefits/payment.png" srcset="/benefits/payment@2x.png 2x" alt="картинка гибкая система оплаты" width="157" height="163">
+                </picture>
+                <h3>Гибкая система оплаты</h3>
+                <p>Отсрочка платежей для постоянных клиентов.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="production">
+          <div class="container production__container">
+            <h2>Наши производители</h2>
+            <div class="production__slider swiper">
+              <div class="production__list swiper-wrapper">
+                <div class="production__item swiper-slide">
+                  <picture>
+                    <source type="image/avif" srcset="/logos/aier.avif 1x, /logos/aier@2x.avif 2x">
+                    <source type="image/webp" srcset="/logos/aier.webp 1x, /logos/aier@2x.webp 2x">
+                    <img src="/logos/aier.png" srcset="/logos/aier@2x.png 2x" alt="логотип aier" width="150" height="94">
+                  </picture>
+                </div>
+                <div class="production__item swiper-slide">
+                  <picture>
+                    <source type="image/avif" srcset="/logos/foryard.avif 1x, /logos/foryard@2x.avif 2x">
+                    <source type="image/webp" srcset="/logos/foryard.webp 1x, /logos/foryard@2x.webp 2x">
+                    <img src="/logos/foryard.png" srcset="/logos/foryard@2x.png 2x" alt="логотип foryard" width="186" height="47">
+                  </picture>
+                </div>
+                <div class="production__item swiper-slide">
+                  <picture>
+                    <source type="image/avif" srcset="/logos/fujicon.avif 1x, /logos/fujicon@2x.avif 2x">
+                    <source type="image/webp" srcset="/logos/fujicon.webp 1x, /logos/fujicon@2x.webp 2x">
+                    <img src="/logos/fujicon.png" srcset="/logos/fujicon@2x.png 2x" alt="логотип fujicon" width="106" height="106">
+                  </picture>
+                </div>
+                <div class="production__item swiper-slide">
+                  <picture>
+                    <source type="image/avif" srcset="/logos/grass.avif 1x, /logos/grass@2x.avif 2x">
+                    <source type="image/webp" srcset="/logos/grass.webp 1x, /logos/grass@2x.webp 2x">
+                    <img src="/logos/grass.png" srcset="/logos/grass@2x.png 2x" alt="логотип grass" width="171" height="116">
+                  </picture>
+                </div>
+                <div class="production__item swiper-slide">
+                  <picture>
+                    <source type="image/avif" srcset="/logos/marquis.avif 1x, /logos/marquis@2x.avif 2x">
+                    <source type="image/webp" srcset="/logos/marquis.webp 1x, /logos/marquis@2x.webp 2x">
+                    <img src="/logos/marquis.png" srcset="/logos/marquis@2x.png 2x" alt="логотип marquis" width="183" height="40">
+                  </picture>
+                </div>
+                <div class="production__item swiper-slide">
+                  <picture>
+                    <source type="image/avif" srcset="/logos/grass.avif 1x, /logos/grass@2x.avif 2x">
+                    <source type="image/webp" srcset="/logos/grass.webp 1x, /logos/grass@2x.webp 2x">
+                    <img src="/logos/grass.png" srcset="/logos/grass@2x.png 2x" alt="логотип grass" width="171" height="116">
+                  </picture>
+                </div>
+                <div class="production__item swiper-slide">
+                  <picture>
+                    <source type="image/avif" srcset="/logos/marquis.avif 1x, /logos/marquis@2x.avif 2x">
+                    <source type="image/webp" srcset="/logos/marquis.webp 1x, /logos/marquis@2x.webp 2x">
+                    <img src="/logos/marquis.png" srcset="/logos/marquis@2x.png 2x" alt="логотип marquis" width="183" height="40">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <button class="production__button production__button--prev" type="button" aria-label="назад">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7">
+                <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z"/>
+              </svg>
+            </button>
+            <button class="production__button production__button--next" type="button" aria-label="вперед">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7">
+                <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z"/>
+              </svg>
+            </button>
+            <p>Lorem ipsum dolor sit amet consectetur. Non eget blandit in&nbsp;euismod felis id&nbsp;quisque nunc. Non orci lacus elit mauris velit gravida imperdiet&nbsp;id. Ipsum pulvinar ac&nbsp;ut&nbsp;sociis. Sed magna gravida consequat et&nbsp;euismod aenean quis mauris. Ut&nbsp;etiam egestas ultrices faucibus ultrices nisl enim consequat faucibus. Nibh id&nbsp;leo ullamcorper eleifend. Id&nbsp;at&nbsp;commodo interdum et&nbsp;leo.</p>
+          </div>
+        </section>
+        <section class="scheme-work">
+          <div class="container scheme-work__container">
+            <h2>Схема работы</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Augue velit in&nbsp;enim sagittis imperdiet sit mauris. Vitae sit in&nbsp;fusce massa amet.</p>
+            <ol class="scheme-work__list">
+              <li class="scheme-work__item scheme-work__item--one">
+                <span class="scheme-work__number">01</span>
+                <div>ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ</div>
+                <p>Отправить запрос вы&nbsp;можете любым удобным для вас способом: например, через форму на&nbsp;сайте. Также вы&nbsp;можете связаться с&nbsp;нами напрямую.</p>
+              </li>
+              <li class="scheme-work__item scheme-work__item--two">
+                <span class="scheme-work__item-triangle"></span>
+                <span class="scheme-work__number">02</span>
+                <div>МЫ ПРОВЕРЯЕМ НАЛИЧИЕ ПОЗИЦИЙ</div>
+                <p>Проверяем наличие на&nbsp;складе,
+                  а&nbsp;также актуальность производства (возможна замена, если необходимо.) Если требуется замена&nbsp;&mdash; подбираем аналоги и&nbsp;привозим на&nbsp;заказ.</p>
+              </li>
+              <li class="scheme-work__item scheme-work__item--three">
+                <span class="scheme-work__item-triangle"></span>
+                <span class="scheme-work__number">03</span>
+                <div>ФОРМИРУЕМ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</div>
+                <p>На&nbsp;данном этапе мы&nbsp;с&nbsp;вами согласуем ценовое предложение, обговариваем сроки поставки и&nbsp;условия оплаты.</p>
+              </li>
+              <li class="scheme-work__item scheme-work__item--four">
+                <span class="scheme-work__item-triangle"></span>
+                <span class="scheme-work__number">04</span>
+                <div>ПРОВОДИМ ОПЛАТУ</div>
+                <p>Далее, после получения авансового платежа, мы&nbsp;размещаем заказ.</p>
+              </li>
+              <li class="scheme-work__item scheme-work__item--five">
+                <span class="scheme-work__item-triangle"></span>
+                <span class="scheme-work__number">05</span>
+                <div>МЫ&nbsp;ВЫПОЛНЯЕМ ЗАКАЗ</div>
+                <p>Товар поступает на&nbsp;склад в&nbsp;Москву или Санкт-Петербург, где мы&nbsp;сверяем правильность поставки и&nbsp;начинаем сборку.</p>
+              </li>
+              <li class="scheme-work__item scheme-work__item--six">
+                <span class="scheme-work__number">06</span>
+                <div>ВЫ&nbsp;ПОЛУЧАЕТЕ ТОВАР</div>
+                <p>Поставляем вам товар в&nbsp;надлежащей упаковке в&nbsp;сопровождении оригиналов всех необходимых документов либо вы&nbsp;забираете его самовывозом.</p>
+              </li>
+            </ol>
+            <button class="scheme-work__button" type="button">оставить заявку</button>
+          </div>
+        </section>
+        <section class="faq">
+          <div class="container faq__container">
+            <h2>Ответы на самые популярные вопросы в сфере</h2>
+            <ul class="faq__list" data-accordion="parent">
+              <li class="faq__item">
+                <button class="faq__button" type="button" data-state="" data-accordion="button">
+                  Lorem ipsum dolor sit amet consectetur. Ultrices aliquam
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7">
+                      <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq__content" data-accordion="content">
+                  <p>Like the phrase &laquo;stem cell&raquo; itself, &laquo;stem cell therapy&raquo; is&nbsp;often used to&nbsp;describe a&nbsp;variety of&nbsp;different medical therapies that utilize stem cells in&nbsp;some form to&nbsp;treat a&nbsp;patient. Sometimes the term is&nbsp;used incorrectly to&nbsp;refer to&nbsp;platelet rich plasma (PRP) injections. The term is&nbsp;also used to&nbsp;refer to&nbsp;stem cell transplants, also known as&nbsp;bone marrow transplants.</p>
+                  <p>Most commonly &laquo;stem cell therapy&raquo; is&nbsp;used to&nbsp;describe a&nbsp;procedure where the patient&rsquo;s adult stem cells and other potentially regenerative cells are harvested from a&nbsp;tissue sample of&nbsp;either fat or&nbsp;bone marrow taken from the patient. These concentrated regenerative cells are then used to&nbsp;treat specific injuries typically by&nbsp;injecting them into the afflicted area. It&nbsp;should be&nbsp;said that this type of&nbsp;stem cell therapy is&nbsp;currently not FDA approved and clinics performing it&nbsp;illegally in&nbsp;the&nbsp;US or&nbsp;in&nbsp;other countries perform various versions of&nbsp;the procedure to&nbsp;treat illnesses and injuries with little to&nbsp;no&nbsp;clinical evidence.</p>
+                  <p>At&nbsp;InGeneron we&nbsp;use the term &laquo;regenerative cell therapy&raquo; since there are many different cell types and regenerative properties collected and used by&nbsp;our therapy along with adult stem cells. Importantly we&nbsp;do&nbsp;not treat patients outside of&nbsp;our approved clinical trials and we&nbsp;are dedicated to&nbsp;securing FDA approval through rigorous clinical testing.</p>
+                </div>
+              </li>
+              <li class="faq__item">
+                <button class="faq__button" type="button" data-state="" data-accordion="button">
+                  Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7">
+                      <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq__content" data-accordion="content">
+                  <p>Like the phrase &laquo;stem cell&raquo; itself, &laquo;stem cell therapy&raquo; is&nbsp;often used to&nbsp;describe a&nbsp;variety of&nbsp;different medical therapies that utilize stem cells in&nbsp;some form to&nbsp;treat a&nbsp;patient. Sometimes the term is&nbsp;used incorrectly to&nbsp;refer to&nbsp;platelet rich plasma (PRP) injections. The term is&nbsp;also used to&nbsp;refer to&nbsp;stem cell transplants, also known as&nbsp;bone marrow transplants.</p>
+                  <p>Most commonly &laquo;stem cell therapy&raquo; is&nbsp;used to&nbsp;describe a&nbsp;procedure where the patient&rsquo;s adult stem cells and other potentially regenerative cells are harvested from a&nbsp;tissue sample of&nbsp;either fat or&nbsp;bone marrow taken from the patient. These concentrated regenerative cells are then used to&nbsp;treat specific injuries typically by&nbsp;injecting them into the afflicted area. It&nbsp;should be&nbsp;said that this type of&nbsp;stem cell therapy is&nbsp;currently not FDA approved and clinics performing it&nbsp;illegally in&nbsp;the&nbsp;US or&nbsp;in&nbsp;other countries perform various versions of&nbsp;the procedure to&nbsp;treat illnesses and injuries with little to&nbsp;no&nbsp;clinical evidence.</p>
+                  <p>At&nbsp;InGeneron we&nbsp;use the term &laquo;regenerative cell therapy&raquo; since there are many different cell types and regenerative properties collected and used by&nbsp;our therapy along with adult stem cells. Importantly we&nbsp;do&nbsp;not treat patients outside of&nbsp;our approved clinical trials and we&nbsp;are dedicated to&nbsp;securing FDA approval through rigorous clinical testing.</p>
+                </div>
+              </li>
+              <li class="faq__item">
+                <button class="faq__button" type="button" data-state="" data-accordion="button">
+                  Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7">
+                      <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq__content" data-accordion="content">
+                  <p>Like the phrase &laquo;stem cell&raquo; itself, &laquo;stem cell therapy&raquo; is&nbsp;often used to&nbsp;describe a&nbsp;variety of&nbsp;different medical therapies that utilize stem cells in&nbsp;some form to&nbsp;treat a&nbsp;patient. Sometimes the term is&nbsp;used incorrectly to&nbsp;refer to&nbsp;platelet rich plasma (PRP) injections. The term is&nbsp;also used to&nbsp;refer to&nbsp;stem cell transplants, also known as&nbsp;bone marrow transplants.</p>
+                  <p>Most commonly &laquo;stem cell therapy&raquo; is&nbsp;used to&nbsp;describe a&nbsp;procedure where the patient&rsquo;s adult stem cells and other potentially regenerative cells are harvested from a&nbsp;tissue sample of&nbsp;either fat or&nbsp;bone marrow taken from the patient. These concentrated regenerative cells are then used to&nbsp;treat specific injuries typically by&nbsp;injecting them into the afflicted area. It&nbsp;should be&nbsp;said that this type of&nbsp;stem cell therapy is&nbsp;currently not FDA approved and clinics performing it&nbsp;illegally in&nbsp;the&nbsp;US or&nbsp;in&nbsp;other countries perform various versions of&nbsp;the procedure to&nbsp;treat illnesses and injuries with little to&nbsp;no&nbsp;clinical evidence.</p>
+                  <p>At&nbsp;InGeneron we&nbsp;use the term &laquo;regenerative cell therapy&raquo; since there are many different cell types and regenerative properties collected and used by&nbsp;our therapy along with adult stem cells. Importantly we&nbsp;do&nbsp;not treat patients outside of&nbsp;our approved clinical trials and we&nbsp;are dedicated to&nbsp;securing FDA approval through rigorous clinical testing.</p>
+                </div>
+              </li>
+              <li class="faq__item">
+                <button class="faq__button" type="button" data-state="" data-accordion="button">
+                  Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7">
+                      <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq__content" data-accordion="content">
+                  <p>Like the phrase &laquo;stem cell&raquo; itself, &laquo;stem cell therapy&raquo; is&nbsp;often used to&nbsp;describe a&nbsp;variety of&nbsp;different medical therapies that utilize stem cells in&nbsp;some form to&nbsp;treat a&nbsp;patient. Sometimes the term is&nbsp;used incorrectly to&nbsp;refer to&nbsp;platelet rich plasma (PRP) injections. The term is&nbsp;also used to&nbsp;refer to&nbsp;stem cell transplants, also known as&nbsp;bone marrow transplants.</p>
+                  <p>Most commonly &laquo;stem cell therapy&raquo; is&nbsp;used to&nbsp;describe a&nbsp;procedure where the patient&rsquo;s adult stem cells and other potentially regenerative cells are harvested from a&nbsp;tissue sample of&nbsp;either fat or&nbsp;bone marrow taken from the patient. These concentrated regenerative cells are then used to&nbsp;treat specific injuries typically by&nbsp;injecting them into the afflicted area. It&nbsp;should be&nbsp;said that this type of&nbsp;stem cell therapy is&nbsp;currently not FDA approved and clinics performing it&nbsp;illegally in&nbsp;the&nbsp;US or&nbsp;in&nbsp;other countries perform various versions of&nbsp;the procedure to&nbsp;treat illnesses and injuries with little to&nbsp;no&nbsp;clinical evidence.</p>
+                  <p>At&nbsp;InGeneron we&nbsp;use the term &laquo;regenerative cell therapy&raquo; since there are many different cell types and regenerative properties collected and used by&nbsp;our therapy along with adult stem cells. Importantly we&nbsp;do&nbsp;not treat patients outside of&nbsp;our approved clinical trials and we&nbsp;are dedicated to&nbsp;securing FDA approval through rigorous clinical testing.</p>
+                </div>
+              </li>
+              <li class="faq__item">
+                <button class="faq__button" type="button" data-state="" data-accordion="button">
+                  Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7">
+                      <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq__content" data-accordion="content">
+                  <p>Like the phrase &laquo;stem cell&raquo; itself, &laquo;stem cell therapy&raquo; is&nbsp;often used to&nbsp;describe a&nbsp;variety of&nbsp;different medical therapies that utilize stem cells in&nbsp;some form to&nbsp;treat a&nbsp;patient. Sometimes the term is&nbsp;used incorrectly to&nbsp;refer to&nbsp;platelet rich plasma (PRP) injections. The term is&nbsp;also used to&nbsp;refer to&nbsp;stem cell transplants, also known as&nbsp;bone marrow transplants.</p>
+                  <p>Most commonly &laquo;stem cell therapy&raquo; is&nbsp;used to&nbsp;describe a&nbsp;procedure where the patient&rsquo;s adult stem cells and other potentially regenerative cells are harvested from a&nbsp;tissue sample of&nbsp;either fat or&nbsp;bone marrow taken from the patient. These concentrated regenerative cells are then used to&nbsp;treat specific injuries typically by&nbsp;injecting them into the afflicted area. It&nbsp;should be&nbsp;said that this type of&nbsp;stem cell therapy is&nbsp;currently not FDA approved and clinics performing it&nbsp;illegally in&nbsp;the&nbsp;US or&nbsp;in&nbsp;other countries perform various versions of&nbsp;the procedure to&nbsp;treat illnesses and injuries with little to&nbsp;no&nbsp;clinical evidence.</p>
+                  <p>At&nbsp;InGeneron we&nbsp;use the term &laquo;regenerative cell therapy&raquo; since there are many different cell types and regenerative properties collected and used by&nbsp;our therapy along with adult stem cells. Importantly we&nbsp;do&nbsp;not treat patients outside of&nbsp;our approved clinical trials and we&nbsp;are dedicated to&nbsp;securing FDA approval through rigorous clinical testing.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer__container">
+          <a class="footer__logo" href="/">
+            <img src="/logo.svg" alt="Логотип" width="189" height="34">
+          </a>
+          <nav class="nav footer__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Производители</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Для  кого мы работаем</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Сертификаты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">FAQ</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="footer__button" type="button">оставить заявку</button>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/ts/main.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/ts/slider.ts"></script>
+  </body>
+</html>

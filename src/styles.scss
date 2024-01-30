@@ -1,0 +1,21 @@
+// Global
+// ---------------------------------
+
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/global";
+@import "scss/container";
+
+// Blocks
+// ---------------------------------
+
+@import "scss/blocks/header";
+@import "scss/blocks/nav";
+@import "scss/blocks/overlay";
+@import "scss/blocks/main";
+@import "scss/blocks/form";
+@import "scss/blocks/benefits";
+@import "scss/blocks/production";
+@import "scss/blocks/scheme-work";
+@import "scss/blocks/faq";
+@import "scss/blocks/footer";

@@ -1,0 +1,184 @@
+@mixin retina {
+  @media (min-resolution: var(--retina-dpi)), (min-resolution: var(--retina-dppx)) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+}
+
+@mixin hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+@mixin title {
+  margin: 0;
+
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-black);
+  text-align: center;
+
+  @media (max-width: (47.97em - 0.06em)) {
+    font-size: 20px;
+  }
+}
+
+@mixin background {
+  background-image: image-set(
+    url("/back_main.avif") 1x type("image/avif"),
+    url("/back_main@2x.avif") 2x type("image/avif"),
+    url("/back_main.png") 1x type("image/png"),
+    url("/back_main@2x.png") 2x type("image/png")
+  );
+  background-color: var(--color-new-midnight-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+}
+
+@mixin backgroundProd {
+  background-image: image-set(
+    url("/back_manufacturers.avif") 1x type("image/avif"),
+    url("/back_manufacturers@2x.avif") 2x type("image/avif"),
+    url("/back_manufacturers.png") 1x type("image/png"),
+    url("/back_manufacturers@2x.png") 2x type("image/png")
+  );
+  background-color: var(--color-new-midnight-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+}
+
+@mixin backgroundScheme {
+  background-image: image-set(
+    url("/back_scheme.avif") 1x type("image/avif"),
+    url("/back_scheme@2x.avif") 2x type("image/avif"),
+    url("/back_scheme.png") 1x type("image/png"),
+    url("/back_scheme@2x.png") 2x type("image/png")
+  );
+  background-color: var(--color-ghost-white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+}
+
+@mixin backgroundFaq {
+  background-image: image-set(
+    url("/back_faq.avif") 1x type("image/avif"),
+    url("/back_faq@2x.avif") 2x type("image/avif"),
+    url("/back_faq.png") 1x type("image/png"),
+    url("/back_faq@2x.png") 2x type("image/png")
+  );
+  background-color: var(--color-new-midnight-blue);;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+}
+
+@mixin orangeButton {
+  display: block;
+  border: none;
+  padding: 16px 10px;
+  border-radius: 10px;
+  background-color: var(--color-orange);
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-default-white);
+  transition: opacity .3s ease;
+
+  cursor: pointer;
+  user-select: none;
+
+  @include hover {
+    opacity: 0.6;
+    transition: opacity .3s ease;
+  }
+
+  @media (max-width: (47.97em - 0.06em)) {
+    font-size: 16px;
+  }
+}
+
+@mixin wave {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 54%;
+    height: 117px;
+    left: -2%;
+    bottom: -81px;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 54%;
+    height: 117px;
+    right: -2%;
+    bottom: -37px;
+    z-index: 1;
+  }
+}
+
+@mixin button {
+  display: block;
+  width: 41px;
+  height: 41px;
+
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+
+  background-color: #757aef;
+  transition: background-color .3s ease;
+
+  svg {
+    fill: var(--color-default-white);
+    transition: fill .3s ease;
+  }
+
+  cursor: pointer;
+  user-select: none;
+
+  @include hover {
+    background-color: var(--color-default-white);
+    transition: background-color .3s ease;
+
+    svg {
+      fill: #000985;
+      transition: fill .3s ease;
+    }
+  }
+}

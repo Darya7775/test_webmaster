@@ -1,0 +1,90 @@
+.footer {
+  width: 100%;
+  padding: 61px 0;
+  background-color: #333333;
+
+  @media (max-width: (80em - 0.06em)) {
+    padding: 36px 0;
+  }
+}
+
+.footer__container {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+
+  @media (max-width: (90em - 0.06em)) {
+    gap: 24px;
+  }
+
+  @media (max-width: (80em - 0.06em)) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    gap: 16px;
+  }
+
+  @media (max-width: (30em - 0.06em)) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+  }
+}
+
+.footer__logo {
+  width: 27%;
+
+  @media (max-width: (90em - 0.06em)) {
+    width: 20%;
+  }
+
+  @media (max-width: (80em - 0.06em)) {
+    width: 100%;
+    grid-area: 1/1/2/2;
+  }
+
+  @media (max-width: (30em - 0.06em)) {
+    grid-area: 1/1/2/-1;
+  }
+}
+
+.footer__nav {
+
+  .nav__list {
+    @media (max-width: (80em - 0.06em)) {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
+
+  @media (max-width: (80em - 0.06em)) {
+    grid-area: 2/1/-1/-1;
+  }
+
+  @media (max-width: (30em - 0.06em)) {
+    grid-area: 3/1/-1/-1;
+  }
+}
+
+.footer__button {
+  @include orangeButton;
+
+  width: 34%;
+  background-color: var(--color-new-midnight-blue);
+
+  @media (max-width: (90em - 0.06em)) {
+    width: 30%;
+  }
+
+  @media (max-width: (80em - 0.06em)) {
+    width: 100%;
+    grid-area: 1/2/2/-1;
+  }
+
+  @media (max-width: (30em - 0.06em)) {
+    grid-area: 2/1/3/-1;
+  }
+}
